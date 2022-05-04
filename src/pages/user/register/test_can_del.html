@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="test">点我</button>
+    <script>
+      function debounce(func, wait = 5000) {
+        let timer;
+        return function (...args) {
+          timer && clearTimeout(timer);
+          timer = setTimeout(() => {
+            func.apply(this, args);
+          }, wait);
+        };
+      }
+      let btn = document.getElementById('test');
+      btn.addEventListener(
+        'click',
+        debounce(() => {
+          console.log('冲');
+        }),
+      );
+    </script>
+  </body>
+</html>
