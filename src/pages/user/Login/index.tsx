@@ -72,7 +72,7 @@ const Login: React.FC = () => {
 
         /** 此方法会跳转到 redirect 参数所在的位置 */
         if (!history) return;
-        history.push('/dashboard' || '/');
+        history.push('/dpcn' || '/');
         return;
       }
       // 如果密码错误，导致登录不上去，打印登录API的响应
