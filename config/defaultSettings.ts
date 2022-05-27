@@ -12,9 +12,9 @@ const Settings: LayoutSettings & {
   fixedHeader: false,
   fixSiderbar: true,
   colorWeak: false,
-  title: '故障领域的小样本知识抽取系统',
+  title: '面向车联网通信协议交互逻辑的安全验证系统',
   pwa: false,
-  logo: 'https://i.imgtg.com/2022/05/07/ztsSj.png',
+  // logo: '',
   iconfontUrl: '',
 };
 

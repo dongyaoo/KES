@@ -72,7 +72,7 @@ const Login: React.FC = () => {
 
         /** 此方法会跳转到 redirect 参数所在的位置 */
         if (!history) return;
-        history.push('/dpcn' || '/');
+        history.push('/modelStudy' || '/');
         return;
       }
       // 如果密码错误，导致登录不上去，打印登录API的响应
@@ -97,12 +97,10 @@ const Login: React.FC = () => {
       </div>
       <div className={styles.content}>
         <LoginForm
-          logo={<img alt="logo" src="/logo.svg" />}
-          title="故障领域小样本知识抽取系统"
-          subTitle={intl.formatMessage({ id: 'pages.layouts.userLayout.title' })}
+          title="面向车联网通信协议交互逻辑的安全验证系统"
           initialValues={{
-            name: 'wxg',
-            pwd: 'wxg',
+            name: 'wx',
+            pwd: 'wx',
             autoLogin: true,
           }}
           actions={[
